@@ -46,3 +46,12 @@ Si no hay API key o se usa `--no-llm`, el pipeline solo genera top words.
 - `outputs/topics_labels.csv` (si LLM)
 - `outputs/llm_error.txt` (si fallo LLM o parseo)
 - `outputs/report.md`
+- `outputs/resultados.md` (reporte consolidado con todos los resultados)
+
+## resultados.md
+El archivo `outputs/resultados.md` consolida:
+- El reporte `outputs/report.md`.
+- La configuracion usada (`outputs/lda_model/config.json`).
+- `outputs/topics_top_words.csv`.
+- `outputs/topics_labels.csv` (si existe).
+- `outputs/doc_topics.csv`.
