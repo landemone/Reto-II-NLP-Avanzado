@@ -1,0 +1,48 @@
+{
+  "input_dir": "data/raw",
+  "output_dir": "outputs",
+  "preprocess": {
+    "lowercase": true,
+    "normalize_accents": true,
+    "remove_numbers": true,
+    "min_token_len": 2,
+    "stopwords_path": null,
+    "extra_stopwords": []
+  },
+  "vectorize": {
+    "max_features": 5000,
+    "min_df": 2,
+    "max_df": 0.95,
+    "ngram_range": [
+      1,
+      2
+    ]
+  },
+  "lda": {
+    "n_topics": 10,
+    "max_iter": 20,
+    "learning_method": "batch",
+    "random_state": 42,
+    "doc_topic_prior": null,
+    "topic_word_prior": null
+  },
+  "cache": {
+    "enabled": true,
+    "dir": "outputs/cache"
+  },
+  "llm": {
+    "enabled": true,
+    "model": "gpt-4o-mini",
+    "language": "es",
+    "temperature": 0.2,
+    "max_tokens": 200,
+    "api_key": null,
+    "base_url": null,
+    "organization": null,
+    "project": null
+  },
+  "report": {
+    "top_words": 12,
+    "report_path": "outputs/report.md"
+  }
+}
