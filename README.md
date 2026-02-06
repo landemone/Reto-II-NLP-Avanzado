@@ -1,4 +1,5 @@
 # Reto LDA ChatGPT
+Sergio Alonso Landin Zaragoza
 
 Pipeline completo para modelado de temas (LDA) y etiquetado con LLM.
 
